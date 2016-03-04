@@ -1,0 +1,6 @@
+#!/bin/bash
+#Program to delete files .class using for loop
+ls *.class > list
+for i in `cat list`;
+do rm "$i";
+done

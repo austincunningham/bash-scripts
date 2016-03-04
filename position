@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+#  austin@austin-mint~ $ some_program word1 word2 word3
+#
+#  If some_program were a bash shell script, we could read 
+#  each item on the command line because the positional parameters 
+#  contain the following:
+
+#     $0 would contain "some_program"
+#     $1 would contain "word1"
+#     $2 would contain "word2"
+#     $3 would contain "word3"
+
+echo "Positional Parameters"
+echo '$0 = ' $0
+echo '$1 = ' $1
+echo '$2 = ' $2
+echo '$3 = ' $3

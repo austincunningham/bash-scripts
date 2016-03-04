@@ -1,0 +1,10 @@
+#!/bin/bash
+#addition and multiplication ! program
+echo Enter the first number
+read num1
+echo Enter the second number
+read num2
+echo The sum is `expr $num1 + $num2`
+echo is the sum right?
+echo The product is `expr $num1 "*" $num2`
+echo Is the product right?

@@ -1,0 +1,24 @@
+#!/bin/bash
+# program to remove files , you can specifiy a file at the prompt
+filename=$1
+echo _______________________________________________________________
+echo
+echo START OF PROGRAM "removefile"
+echo _______________________________________________________________
+echo
+if [[ -f $filename ]]
+	then
+	echo $filename "files found do you wish to remove the files (y/n)"
+    read response
+fi
+if [[ $response = "y" ]];
+	then 
+	rm $filename
+    echo $filename "file found and removed"
+else
+	echo file not found
+fi
+echo _______________________________________________________________
+echo
+echo END OF PROGRAM "removefile"
+echo _______________________________________________________________

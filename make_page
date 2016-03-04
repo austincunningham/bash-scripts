@@ -1,0 +1,11 @@
+#!/bin/bash
+# program to make a simple html file 
+echo "<!DOCTYPE HTML>" >>simple.html
+echo "<html>" >>simple.html
+echo  "<head>" >>simple.html
+echo  	"<title>simple page</title>" >>simple.html
+echo  "<head>" >>simple.html
+echo  "<body>" >>simple.html
+echo  	"<h1>Simple page </h1>" >>simple.html
+echo  "</body>" >>simple.html
+echo "</html>" >>simple.html
