@@ -1,0 +1,10 @@
+#!/bin/bash
+#Program name: pings-script
+#Author : Austin Cunningham
+#About : read a file called pings for ip addresses and host names and ping and output to a logfile
+date
+cat pings | while read output
+do
+    ping -c 1 "$output" >>logfile 
+done
+cat logfile

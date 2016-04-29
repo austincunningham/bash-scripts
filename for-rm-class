@@ -1,4 +1,5 @@
 #!/bin/bash
+# Author : Austin Cunningham
 #Program to delete files .class using for loop
 ls *.class > list
 for i in `cat list`;

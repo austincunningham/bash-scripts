@@ -1,5 +1,6 @@
 #!/bin/bash
-# program to remove files , you can specifiy a file at the prompt
+# Author : Austin Cunningham
+# About : program to remove files , you can specifiy a file at the prompt
 filename=$1
 echo _______________________________________________________________
 echo

@@ -1,0 +1,12 @@
+#!/bin/bash
+# Author : Austin Cunningham
+# About: this scripts takes in a command line argument of a year and returns how many years ago it was
+x=`date +"%Y"`
+if [ $1 -gt $x ]
+then 
+    echo $1 is a date in the future, script works for days in the passed
+    echo exiting script
+	exit 1
+else
+	echo That was `expr $x - $1` years ago
+fi

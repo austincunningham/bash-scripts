@@ -1,5 +1,6 @@
 #!/bin/bash
-# program to make a simple html file 
+# Author : Austin Cunningham
+# About : program to make a simple html file 
 echo "<!DOCTYPE HTML>" >>simple.html
 echo "<html>" >>simple.html
 echo  "<head>" >>simple.html

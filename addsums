@@ -1,4 +1,5 @@
 #!/bin/bash
+# Author : Austin Cunningham
 #addition and multiplication ! program
 echo Enter the first number
 read num1

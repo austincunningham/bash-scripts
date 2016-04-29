@@ -1,4 +1,5 @@
 #!/bin/bash
+# Author : Austin Cunningham
 #Program poll 1 to 100 using while loop
 echo is it doing anything
 num=1
