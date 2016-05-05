@@ -1,0 +1,18 @@
+#!/bin/bash
+# Last edited June 20th
+#
+if [ $# -ne 1 ] 
+then
+echo Usage error
+exit 1
+fi
+#
+cp $1 ./test/file1.txt
+if [ $? -ne 0 ] 
+then
+echo File or media error
+else
+echo Operation completed at: `date`
+fi
+# 
+#end

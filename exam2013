@@ -1,0 +1,17 @@
+#!/bin/bash
+# Start of script
+#
+if [ $# -ne 1 ] 
+then
+echo Usage Error
+exit 1
+fi
+#
+num=1
+while [ $num -le $1 ] 
+do
+echo $num
+num=`expr $num + 1`
+done
+#
+# End of script

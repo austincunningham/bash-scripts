@@ -1,0 +1,14 @@
+#!/bin/bash
+if [ $# -ne 1 ]
+then
+echo only one command line input accepted
+exit 1
+fi
+echo $1
+ls | grep $1
+file=`ls | grep $1`
+if [ $1 = $file ]
+then
+cp $1 ./backup
+echo backup made
+fi
