@@ -1,0 +1,22 @@
+#!/bin/bash
+######################################################################
+#
+#Author: Austin Cunningham
+#Date:01/06/2016
+#About: runs git status add commit and push, takes a command line arg
+#       as a string in the form 'Enter commit message'
+#
+######################################################################
+git status
+sleep 1 
+echo "do you wish to proceed? Y/N"
+read yesno
+if  [[ $yesno = "y" || $yesno = "Y" ]]
+	then 
+	git add --all
+    git commit -m "$1"
+    git push -u origin master
+else
+	echo Goodbye
+	exit 113
+fi
