@@ -1,0 +1,27 @@
+################################################################################
+#
+#Author : Austin Cunningham
+#version: 01/07/2016
+#About: list of git command line aliases that print logs, in various formats, 
+#       i.e. list tags, list commit messages, list author.
+#Usage: Add to .bashrc or .bash_profile 
+#
+################################################################################
+# Git aliases
+################################################################################
+
+#Provide minimal graphical display
+alias gitbr='git log --oneline --decorate --graph --all'
+
+# Include author
+alias gitpa="git log --pretty=format:'%C(yellow)%h %<(24)%C(red)%ad %<(18)%C(green)%an %C(reset)%s' --date=local --max-count=10"
+
+#Print latest 10 submit logs
+alias gitp="git log --pretty=format:'%C(yellow)%h %Cred%ad  %Creset%s' --date=local --max-count=10"
+
+#Print latest all submit logs
+alias gitpp="git log --pretty=format:'%C(yellow)%h %Cred%ad  %Creset%s' --date=local"
+
+#Print log information on tags
+alias gitag="git log --no-walk --tags --pretty=format:' %C(yellow)%h %Cgreen%d  %Cred%ad  %Creset%s' --date=local"
+
