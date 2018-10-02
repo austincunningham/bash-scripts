@@ -16,3 +16,13 @@ echo '$0 = ' $0
 echo '$1 = ' $1
 echo '$2 = ' $2
 echo '$3 = ' $3
+echo '$@ = ' "$@"
+
+# $@ is an array of command line arguments to check if one of the arguments is 
+# we can use if with grep to determine if an individual argument has been entered at the command line
+if echo "$@"> grep -c  
+then 
+	echo "$@"
+	echo "found -c"
+fi
+
